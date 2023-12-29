@@ -2,6 +2,28 @@
 
 This was an assignment for my third semester Java class.
 
+<img width="341" alt="LibraryPage1" src="https://github.com/Laird89/LibraryDatabase/assets/117320855/dbcda412-c632-4240-af24-e48c1258f28e">
+Library Database.
+
+<img width="641" alt="LibraryPage2RequiresLogin" src="https://github.com/Laird89/LibraryDatabase/assets/117320855/cfe8f4da-2cc8-4a49-9636-273612ce6e36">
+Review page, requires user to login to leave a review.
+
+<img width="324" alt="LibraryLoginPage" src="https://github.com/Laird89/LibraryDatabase/assets/117320855/85c00169-1543-4721-bd4f-cc545a0df68c">
+Login page.
+
+<img width="307" alt="LibraryRegisterPage" src="https://github.com/Laird89/LibraryDatabase/assets/117320855/686c4039-023d-4ab9-939d-1979965068da">
+Register page.
+
+<img width="628" alt="LibraryReviewAfterLogin" src="https://github.com/Laird89/LibraryDatabase/assets/117320855/f050bcaa-80ff-46ed-8c04-3f6f65bcc6d3">
+Review page after login.
+
+<img width="269" alt="LibraryReviewPage" src="https://github.com/Laird89/LibraryDatabase/assets/117320855/853fa4e9-36c4-478e-9620-78ee325b5ab4">
+Form for leaving a review.
+
+<img width="329" alt="LibraryAddBook" src="https://github.com/Laird89/LibraryDatabase/assets/117320855/2dc3e7f9-285a-4655-b1ee-48d00d152b48">
+Add a book form which only admins have access to.
+
+
 **1. Project Overview:**
    - The project is a web application designed for a library database, allowing users to view, add, and review books.
    - It employs the Spring Boot framework, integrating Spring MVC for web functionality, Thymeleaf for templating, and Spring Security for access control.
