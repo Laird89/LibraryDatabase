@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add book</title>
+</head>
+<body>
+
+    <h1>Add a New Book</h1>
+
+    <form action="#" th:action="@{/submitBook}" method="post">
+        <p>Book Name: <input type="text" name="title" /></p>
+        <p>Author: <input type="text" name="author" /></p>
+        <input type="submit" value="Add book" />
+    </form>
+    <br>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Logout" />
+    </form>
+
+    <p><a href="#" th:href="@{/}">Back to Index</a></p>
+</body>
+</html>

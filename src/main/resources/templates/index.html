@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en" xmlns:th="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+    <meta charset='utf-8'>
+    <title>Library Database</title>
+    <style>
+        table,th,tr,td{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Library Database</h1>
+
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Review</th>
+        </tr>
+        <tr th:each="book: ${bookList}">
+            <td th:text="${book.title}"></td>
+            <td th:text="${book.author}"></td>
+            <td><a th:href="@{/viewBook(id=${book.id}, title=${book.title})}">View</a></td>
+        </tr>
+    </table>
+
+    <p sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/addBook}">Add a Book</a></p>
+    
+    <div sec:authorize="isAnonymous">
+        <p><a th:href="@{/login}">Login Here</a></p>
+    </div>
+    
+    <div sec:authorize="isAuthenticated()">
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Logout" />
+        </form>
+    </div>
+</body>
+</html>
